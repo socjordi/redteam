@@ -1,5 +1,4 @@
-# redteam
-Red Team Exercises - Physical Attacks
+# Red Team Exercises - Physical Attacks
 
 These exercises focused on evaluating physical security. The primary objective of the exercises was to identify vulnerabilities in physical security measures, operational procedures, and access controls by simulating the methods used by malicious actors.
 These exercises not only aim to identify weaknesses but also provide practical recommendations to strengthen security and improve response capabilities against potential physical threats.

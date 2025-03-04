@@ -9,8 +9,8 @@ The goal was to find small, easily hidden, and as cheap as possible materials.
 
 Once it was discovered that physical access was controlled using MIFARE Classic contactless smart cards and that the control was based on the card's identifier, a device was set up to capture card identifiers. The device could be placed next to the legitimate reader and remain unnoticed. It stores the identifiers in Flash memory, and the collector retrieves the list via Wi-Fi.
 
-<img src="https://github.com/socjordi/redteam/blob/main/images/IMG_20250301_180230.jpg" width="800">
-![Into the card box](https://github.com/socjordi/redteam/blob/main/images/IMG_20250301_175944.jpg){ width=800 }
+<img src="https://github.com/socjordi/redteam/blob/main/images/IMG_20250301_180230.jpg" width="800"/>
+<img src="https://github.com/socjordi/redteam/blob/main/images/IMG_20250301_175944.jpg" width="800"/>
 ![Installing the card reader](https://github.com/socjordi/redteam/blob/main/images/card_reader.gif)
 
 Bill of materials:

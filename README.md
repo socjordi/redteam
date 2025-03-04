@@ -51,7 +51,7 @@ Bill of materials:
 
 A small (100x23x64mm) and inexpensive 5 Gigabit ports ethernet switch model was chosen, but one that had the capability to perform port mirroring. The main objective was to capture unencrypted network traffic. The switch was configured so that all inbound and outbound network traffic in ports 1- 4 was copied to port 5, which was sniffed by the collector. A second network interface in the collector was connected to one of ports 1-4 to do remote attacks.
 
-<img src="https://github.com/socjordi/redteam/blob/main/images/Switch.png" width="800"/>
+<img src="https://github.com/socjordi/redteam/blob/main/images/Switch.png">
 
 Bill of materials:
 - Ethernet Switch Tenda TEG205E (14.60 €)
@@ -60,7 +60,7 @@ Bill of materials:
 
 Even though it is not the cheapest, the smallest keylogger on the market with built-in Wi-Fi access was chosen. It’s body is only 15x10x10mm.
 
-<img src="https://github.com/socjordi/redteam/blob/main/images/Keylogger.png" width="800"/>
+<img src="https://github.com/socjordi/redteam/blob/main/images/Keylogger.png">
 <img src="https://github.com/socjordi/redteam/blob/main/images/keylogger.gif" width="800"/>
 
 Bill of materials:

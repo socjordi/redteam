@@ -38,6 +38,10 @@ Bill of materials:
 
 It is a mini-computer that collects keylogger captures, network traffic, access card identifiers, conversation recordings, etc., and sends them to a C2 server on the internet, which is accessible to the attacker. By means of a LAN USB adapter, a second network interface was created to do remote attacks.
 
+A custom cable was made to electrically power the switch from the Raspberry Pi.
+
+A USB microphone was connected to the Rpasberry Pi, so that ambient sound could be recorded.
+
 <img src="https://github.com/socjordi/redteam/blob/main/images/IMG_20250301_182440.jpg" width="800"/>
 <img src="https://github.com/socjordi/redteam/blob/main/images/collector.gif" width="800"/>
 
@@ -65,3 +69,16 @@ Even though it is not the cheapest, the smallest keylogger on the market with bu
 
 Bill of materials:
 - KeyDemon KeyGrabber Air USB (60.00 €)
+
+### The C2 server
+
+A VPS server and a new domain were used to receive the stolen data and to access the collector, if necessary.
+
+Some custom scripts were created in the collector to send the following data to the C2 server:
+- all keystrokes from the keylogger,
+- identifiers from the access cards,
+- the captured network traffic (in PCAP format). A BPF filter was used to capture non-encrypted protocols, like FTP (TCP port 21), TELNET (TCP port 23), DHCP (UDP ports 67 and 68), DNS (TCP port 53), HTTP (port 80), LDAP (TCP port 389) or SMB (TCP port 445).
+
+A WireGuard VPN was set up with both the collector and the C2 server-
+
+Arkime (https://arkime.com/) was installed in the server, so that the attacker / readteamer could use it to search for interesting credentials or get useful information about the network.
